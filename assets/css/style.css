@@ -1,0 +1,32 @@
+ @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,h2,h3,h4,h5,h6{
+    @apply font-jakarta;
+}
+
+.menu-link{
+    @apply flex items-center gap-x-2 font-semibold text-first text-base p-4 rounded-[10px]
+}
+
+.menu-link:hover,
+.menu-link.active{
+    @apply bg-second text-third
+}
+
+.menu-link:hover svg,
+.menu-link.active svg{
+    @apply text-third
+}
+
+.anim{
+    @apply transition duration-500 ease-in-out;
+}
+ 
+
+input{
+    @apply focus-within:shadow-none focus-within:border-0 focus-visible:border-0 focus-visible:shadow-none outline-none
+}
