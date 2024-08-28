@@ -17,7 +17,7 @@
     <title>TargetWho || Dashboard </title>
 </head>
 
-<body class="font-worksan">
+<body class="font-worksan overflow-hidden">
 
     <!-- header -->
     <header class="w-full py-3 px-6 xl:py-5 xl:z-[9999] xl:bg-white xl:fixed xl:top-0 xl:left-0 xl:right-0">
@@ -762,6 +762,63 @@
         </div>
     </main>
     <!-- main wrap -->
+
+    <!-- projet svae modal start -->
+    <div
+        class="w-full fixed z-[9999] h-full top-0 left-0 right-0 bottom-0 bg-[#323B49] bg-opacity-40 p-6 flex justify-center items-center">
+        <div class="bg-white max-w-[380px] p-6 rounded-[10px] w-full shadow-one xl:max-w-[420px]">
+            <div class="flex justify-between items-center">
+                <h4 class="flex items-center gap-x-2 font-bold text-xl text-[#323B49] xl:text-2xl">
+                    <span class="size-[44px] rounded-full flex items-center justify-center bg-first">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 7H5C3.89543 7 3 7.89543 3 9V18C3 19.1046 3.89543 20 5 20H19C20.1046 20 21 19.1046 21 18V9C21 7.89543 20.1046 7 19 7H16M15 11L12 14M12 14L9 11M12 14L12 4"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    Save to Project
+                </h4>
+
+                <button type="button" class="flex -mt-3 xl:-mt-5">
+                    <svg class="size-4 xl:size-5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 12L12 4M4 4L12 12" stroke="#A0AEC0" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </button>
+            </div>
+            <div class="w-full mt-6">
+                <form action="" class="w-full gap-y-5 flex flex-col">
+                    <div class="w-full">
+                        <label for="existing_project" class="text-base font-medium text-[#323B49] flex mb-2">Save to an existing project</label>
+
+                        <select name="existing_project" id="existing_project" class="h-12 rounded-md border border-[#E9EAEC] w-full px-[14px] text-sm font-normal text-[#687588] focus-within:border-third  xl:text-base anim">
+                            <option value="">No project</option>
+                            <option value="one">Project One</option>
+                        </select>
+                    </div>
+                    <div class="w-full">
+                        <label for="project_name" class="text-base font-medium text-[#323B49] flex mb-2">Save to a new project</label>
+
+                        <input type="text" placeholder="Name your project" name="project_name" id="project_name" class="h-12 rounded-md border border-[#E9EAEC] w-full px-[14px] text-sm font-normal text-[#687588] focus-within:border-third xl:text-base anim">
+                    </div>
+
+                    <div class="w-full">
+                        <label for="category_name" class="text-base font-medium text-[#323B49] flex mb-2">Insert Category</label>
+
+                        <select name="category_name" id="category_name" class="h-12 rounded-md border border-[#E9EAEC] w-full px-[14px] text-sm font-normal text-[#687588] focus-within:border-third anim xl:text-base">
+                            <option value="">Select Category</option>
+                            <option value="one">Category One</option>
+                        </select>
+                    </div>
+                    <div class="w-full">
+                        <button type="submit" class="w-full h-[51px] flex justify-center items-center bg-first text-white font-bold text-base rounded-md xl:text-lg font-jakarta anim hover:bg-four">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- projet svae modal end -->
 
 </body>
 

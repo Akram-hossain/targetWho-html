@@ -17,7 +17,7 @@
     <title>TargetWho || Dashboard </title>
 </head>
 
-<body class="font-worksan">
+<body class="font-worksan overflow-hidden">
 
     <!-- header -->
     <header class="w-full py-3 px-6 xl:py-5 xl:z-[9999] xl:bg-white xl:fixed xl:top-0 xl:left-0 xl:right-0">
@@ -762,6 +762,48 @@
         </div>
     </main>
     <!-- main wrap -->
+
+    <!-- projet copy modal start -->
+    <div
+        class="w-full fixed z-[9999] h-full top-0 left-0 right-0 bottom-0 bg-[#323B49] bg-opacity-40 p-6 flex justify-center items-center">
+        <div
+            class="bg-white max-w-[380px] p-6 rounded-[10px] w-full shadow-one xl:max-w-[400px] xl:py-[42px] xl:px-[90px]">
+            <div class="w-full">
+                <form action="" class="w-full">
+                    <div class="w-full text-center">
+                        <div class="mx-auto">
+                            <svg class="size-[120px] mx-auto" viewBox="0 0 120 120" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M85.666 49.1667L82.0522 99.7604C81.7407 104.121 78.112 107.5 73.74 107.5H39.2587C34.8867 107.5 31.258 104.121 30.9465 99.7604L27.3327 49.1667M48.166 65.8333V90.8333M64.8327 65.8333V90.8333M68.9994 49.1667V36.6667C68.9994 34.3655 67.1339 32.5 64.8327 32.5H48.166C45.8648 32.5 43.9994 34.3655 43.9994 36.6667V49.1667M23.166 49.1667H89.8327"
+                                    stroke="#323B49" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="84.5" cy="34" r="1" fill="#F79009" />
+                                <circle cx="34.5" cy="1" r="1" fill="#F79009" />
+                                <circle cx="15.5" cy="70" r="1" fill="#F04438" />
+                                <path d="M106.75 63.75L115.25 55.25M106.75 55.25L115.25 63.75" stroke="#F04438"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M89 9.5L94 4.5M89 4.5L94 9.5" stroke="#F04438" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3 38.5L8 33.5M3 33.5L8 38.5" stroke="#F79009" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <h6 class="text-lg font-bold text-[#323B49] my-6">Are You Sure You Want To
+                            Delete Project?</h6>
+                    </div>
+
+                    <div class="w-full grid items-center grid-cols-2 gap-x-[10px]">
+                        <button type="submit"
+                            class="w-full h-[46px] flex justify-center items-center bg-[#E9EAEC] text-[#323B49] font-semibold text-base rounded-md  font-jakarta anim hover:bg-four hover:text-white">No</button>
+                        <button type="submit"
+                            class="w-full h-[46px] flex justify-center items-center bg-[#F04438] text-white font-semibold text-base rounded-md  font-jakarta anim hover:bg-first">Yes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- projet copy modal end -->
 
 </body>
 

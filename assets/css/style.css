@@ -4,40 +4,63 @@
 @tailwind components;
 @tailwind utilities;
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     @apply font-jakarta;
 }
 
-.menu-link{
+.menu-link {
     @apply flex items-center gap-x-2 font-semibold text-first text-base p-4 rounded-[10px]
 }
 
 .menu-link:hover,
-.menu-link.active{
+.menu-link.active {
     @apply bg-second text-third
 }
 
 .menu-link:hover svg,
-.menu-link.active svg{
+.menu-link.active svg {
     @apply text-third
 }
 
-.anim{
+.anim {
     @apply transition duration-500 ease-in-out;
 }
- 
 
-input{
-    @apply focus-within:shadow-none focus-within:border-0 focus-visible:border-0 focus-visible:shadow-none outline-none
+
+input {
+    @apply focus-visible:shadow-none outline-none
 }
 
-#default-checkbox:checked + label::before {
+input:checked+label::before {
     content: "";
     display: block;
     width: 100%;
     height: 100%;
     background: transparent;
 }
-#default-checkbox:checked + label span svg {
+
+input:checked+label span svg {
     display: block;
+}
+ 
+body::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+body::-webkit-scrollbar-track {
+    background: #aba5a5;
+}
+ 
+body::-webkit-scrollbar-thumb {
+    background: #009688;
+    border-radius: 30px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #025f55;
 }
