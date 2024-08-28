@@ -48,19 +48,23 @@ input:checked+label span svg {
     display: block;
 }
  
+#layerModal::-webkit-scrollbar ,
 body::-webkit-scrollbar {
     width: 7px;
 }
  
+#layerModal::-webkit-scrollbar-track,
 body::-webkit-scrollbar-track {
     background: #aba5a5;
 }
  
+#layerModal::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
     background: #009688;
     border-radius: 30px;
 }
 
+#layerModal::-webkit-scrollbar-thumb:hover,
 body::-webkit-scrollbar-thumb:hover {
     background: #025f55;
 }

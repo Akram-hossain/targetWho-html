@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Giopio is a Digital Agency">
+    <meta property="og:title" content="Giopio">
+    <meta property="og:type" content="Digital Agency">
+    <meta property="og:url" content="https://giopio.com/">
+    <meta property="og:image" content="https://giopio.com/wp-content/uploads/2023/11/main-logo-dark.png">
+    <meta name="theme-color" content="#009688">
+
+    <link rel="shortcut icon" href="./assets/images/icons/favicon.svg" type="image/x-icon">
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <title>TargetWho || Dashboard </title>
+</head>
+
+<body class="font-worksan overflow-hidden">
+
+    <!-- header -->
+    <header class="w-full py-3 px-6 xl:py-5 xl:z-[9999] xl:bg-white xl:fixed xl:top-0 xl:left-0 xl:right-0">
+        <div class="container-fluid">
+            <div class="grid items-center grid-cols-3">
+                <!-- humburger -->
+                <div class="w-full xl:hidden">
+                    <button type="button">
+                        <img src="./assets/images/icons/humburg.svg" alt="humburg">
+                    </button>
+                </div>
+                <!-- humburger -->
+
+                <!-- brand -->
+                <div class="w-full">
+                    <a href="index.html">
+                        <img src="./assets/images/logo.svg" alt="targetWho" class="max-w-[125px] xl:max-w-[168px]">
+                    </a>
+                </div>
+                <!-- brand -->
+
+                <!-- actions -->
+                <div class="w-full text-end xl:col-span-2 xl:flex xl:justify-end xl:gap-x-4 xl:items-center">
+                    <button type="button" class="hidden xl:flex relative">
+                        <span
+                            class="size-2 rounded-full bg-[#F04438] block absolute right-0 -top-1 ring ring-white"></span>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.8091 19.7756C19.3352 19.476 21.7711 18.8821 24.0815 18.0292C22.1658 15.9027 20.9997 13.0875 20.9997 10V9.06558C20.9999 9.04374 21 9.02188 21 9C21 4.58172 17.4183 1 13 1C8.58172 1 5 4.58172 5 9L4.99974 10C4.99974 13.0875 3.8337 15.9027 1.91797 18.0292C4.22854 18.8821 6.66458 19.4761 9.19085 19.7757M16.8091 19.7756C15.56 19.9238 14.2888 20 12.9997 20C11.7109 20 10.4398 19.9238 9.19085 19.7757M16.8091 19.7756C16.9331 20.1615 17 20.5729 17 21C17 23.2091 15.2091 25 13 25C10.7909 25 9 23.2091 9 21C9 20.573 9.06692 20.1615 9.19085 19.7757"
+                                stroke="#687588" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button type="button" class="flex">
+                        <img src="./assets/images/avatar.png" alt="avatar"
+                            class="w-6 h-6 rounded-full object-cover xl:size-[42px]">
+                    </button>
+                    <button type="button" class="hidden xl:flex">
+                        <svg class="size-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 9C15.4477 9 15 8.55228 15 8C15 7.44772 15.4477 7 16 7C16.5523 7 17 7.44772 17 8C17 8.55228 16.5523 9 16 9Z"
+                                stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M16 17C15.4477 17 15 16.5523 15 16C15 15.4477 15.4477 15 16 15C16.5523 15 17 15.4477 17 16C17 16.5523 16.5523 17 16 17Z"
+                                stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M16 25C15.4477 25 15 24.5523 15 24C15 23.4477 15.4477 23 16 23C16.5523 23 17 23.4477 17 24C17 24.5523 16.5523 25 16 25Z"
+                                stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                </div>
+                <!-- actions -->
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- sidebar -->
+    <aside
+        class="w-[90%] font-jakarta fixed left-0 top-0 bottom-0 z-[9999] bg-gray-100 py-8 px-6 hidden xl:flex xl:max-w-[30%] xl:w-[400px] xl:z-[999] xl:pt-28 xl:bg-white xl:pr-16">
+        <ul class="flex flex-col gap-y-2 xl:w-full">
+            <li>
+                <a href="#" class="menu-link active group anim">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 text-[#687588]">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link group anim">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="size-6 text-[#687588]">
+                        <path
+                            d="M19 2H21C21.5523 2 22 2.44772 22 3V5M21 3C13.0585 9.39136 8.94212 11.1129 2 12M18 10V20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20V10C22 8.89543 21.1046 8 20 8C18.8954 8 18 8.89543 18 10ZM2 18L2 20C2 21.1046 2.89543 22 4 22C5.10457 22 6 21.1046 6 20L6 18C6 16.8954 5.10457 16 4 16C2.89543 16 2 16.8954 2 18ZM10 14V20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20V14C14 12.8954 13.1046 12 12 12C10.8954 12 10 12.8954 10 14Z"
+                            stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span>Project</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link group anim">
+                    <svg class="size-6 text-[#687588]" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 3.05493C6.50005 3.55237 3 7.36744 3 12C3 16.9706 7.02944 21 12 21C16.6326 21 20.4476 17.4999 20.9451 13H11V3.05493Z"
+                            stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.4878 9H15V3.5123C17.5572 4.41613 19.5839 6.44284 20.4878 9Z" stroke="#687588"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span>Search History</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link group anim">
+                    <svg class="size-6 text-[#687588]" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="12" cy="16.5" rx="6" ry="2.5" stroke="#687588" stroke-width="1.5"
+                            stroke-linejoin="round" />
+                        <circle cx="12" cy="8" r="3" stroke="#687588" stroke-width="1.5" stroke-linejoin="round" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.44547 13.2615C5.20689 13.313 4.06913 13.5361 3.18592 13.8894C2.68122 14.0913 2.22245 14.3505 1.87759 14.6766C1.53115 15.0042 1.25 15.4512 1.25 16C1.25 16.5488 1.53115 16.9958 1.87759 17.3234C2.22245 17.6495 2.68122 17.9087 3.18592 18.1106C3.68571 18.3105 4.26701 18.4687 4.90197 18.5778C4.40834 18.0453 4.09852 17.4503 4.01985 16.8195C3.92341 16.787 3.83104 16.7531 3.74301 16.7179C3.34289 16.5578 3.06943 16.386 2.90826 16.2336C2.7498 16.0837 2.74999 16.0046 2.75 16.0001L2.75 16L2.75 15.9999C2.74999 15.9954 2.7498 15.9163 2.90826 15.7664C3.06943 15.614 3.34289 15.4422 3.74301 15.2821C3.94597 15.201 4.17201 15.1266 4.41787 15.0608C4.83157 14.371 5.53447 13.756 6.44547 13.2615Z"
+                            fill="#687588" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9801 16.8195C19.9014 17.4503 19.5916 18.0453 19.0979 18.5778C19.7329 18.4687 20.3142 18.3105 20.814 18.1106C21.3187 17.9087 21.7775 17.6495 22.1223 17.3234C22.4688 16.9958 22.7499 16.5488 22.7499 16C22.7499 15.4512 22.4688 15.0042 22.1223 14.6766C21.7775 14.3505 21.3187 14.0913 20.814 13.8894C19.9308 13.5361 18.793 13.313 17.5544 13.2615C18.4654 13.756 19.1683 14.371 19.582 15.0608C19.8279 15.1266 20.0539 15.201 20.2569 15.2821C20.657 15.4422 20.9305 15.614 21.0917 15.7664C21.2501 15.9163 21.2499 15.9954 21.2499 15.9999V16V16.0001C21.2499 16.0046 21.2501 16.0837 21.0917 16.2336C20.9305 16.386 20.657 16.5578 20.2569 16.7179C20.1689 16.7531 20.0765 16.787 19.9801 16.8195Z"
+                            fill="#687588" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.5145 10.1522C16.2946 10.6126 16.0063 11.0341 15.6628 11.4036C16.0587 11.6243 16.5147 11.75 17.0001 11.75C18.5188 11.75 19.7501 10.5188 19.7501 9C19.7501 7.48122 18.5188 6.25 17.0001 6.25C16.8958 6.25 16.7929 6.2558 16.6916 6.26711C16.8637 6.73272 16.9684 7.23096 16.9939 7.75001C16.996 7.75 16.998 7.75 17.0001 7.75C17.6904 7.75 18.2501 8.30964 18.2501 9C18.2501 9.69036 17.6904 10.25 17.0001 10.25C16.8278 10.25 16.6637 10.2152 16.5145 10.1522Z"
+                            fill="#687588" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.30845 6.26711C7.20719 6.2558 7.10427 6.25 7 6.25C5.48122 6.25 4.25 7.48122 4.25 9C4.25 10.5188 5.48122 11.75 7 11.75C7.48537 11.75 7.94138 11.6243 8.33721 11.4036C7.99374 11.0341 7.70549 10.6126 7.4856 10.1522C7.33631 10.2152 7.17222 10.25 7 10.25C6.30964 10.25 5.75 9.69036 5.75 9C5.75 8.30964 6.30964 7.75 7 7.75C7.00205 7.75 7.00409 7.75 7.00614 7.75001C7.0317 7.23096 7.13641 6.73272 7.30845 6.26711Z"
+                            fill="#687588" />
+                    </svg>
+
+
+                    <span>Team</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link group anim">
+                    <svg class="size-6 text-[#687588]" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.3246 4.31731C10.751 2.5609 13.249 2.5609 13.6754 4.31731C13.9508 5.45193 15.2507 5.99038 16.2478 5.38285C17.7913 4.44239 19.5576 6.2087 18.6172 7.75218C18.0096 8.74925 18.5481 10.0492 19.6827 10.3246C21.4391 10.751 21.4391 13.249 19.6827 13.6754C18.5481 13.9508 18.0096 15.2507 18.6172 16.2478C19.5576 17.7913 17.7913 19.5576 16.2478 18.6172C15.2507 18.0096 13.9508 18.5481 13.6754 19.6827C13.249 21.4391 10.751 21.4391 10.3246 19.6827C10.0492 18.5481 8.74926 18.0096 7.75219 18.6172C6.2087 19.5576 4.44239 17.7913 5.38285 16.2478C5.99038 15.2507 5.45193 13.9508 4.31731 13.6754C2.5609 13.249 2.5609 10.751 4.31731 10.3246C5.45193 10.0492 5.99037 8.74926 5.38285 7.75218C4.44239 6.2087 6.2087 4.44239 7.75219 5.38285C8.74926 5.99037 10.0492 5.45193 10.3246 4.31731Z"
+                            stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                            stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link group anim">
+                    <svg class="size-6 text-[#687588]" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 17H20L18.5951 15.5951C18.2141 15.2141 18 14.6973 18 14.1585V11C18 8.38757 16.3304 6.16509 14 5.34142V5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5V5.34142C7.66962 6.16509 6 8.38757 6 11V14.1585C6 14.6973 5.78595 15.2141 5.40493 15.5951L4 17H9M15 17V18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18V17M15 17H9"
+                            stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span>Notifications</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- sidebar -->
+
+    <!-- main wrap -->
+    <main class="w-full bg-white px-6 mt-[10px] pb-5 xl:pl-[400px] xl:pt-[82px] xl:pb-2">
+        <div class="xl:bg-[#FAFAFA] w-full xl:border xl:border-[#E9EAEC] xl:p-6 xl:rounded-t-2xl">
+            <!-- search -->
+            <div class="w-full relative border border-first rounded-[8px] h-[62px] xl:h-[76px]">
+                <!-- country -->
+                <div class="dropdown relative inline-flex w-[94px] justify-center items-center h-full">
+                    <button type="button"
+                        class="flex bg-third rounded-[10px] rounded-r-none h-full items-center gap-x-3 px-4">
+                        <img src="./assets/images/flags/us.svg" alt="us"
+                            class="w-7 h-7 rounded-full bg-cover xl:size-8">
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1.5L6 6.5L1 1.5" stroke="#687588" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu absolute left-0 z-[9999] bg-gray-100 rounded-lg min-w-24 xl:top-[74px] xl:w-[100px] xl:bg-white xl:z-40
+                     xl:border-gray-200 border hidden">
+                        <ul class="flex flex-col gap-y-1">
+                            <li>
+                                <a href="#"
+                                    class="flex items-center gap-x-2 font-semibold text-sm text-first anim hover:bg-second px-4 py-3">
+                                    <img src="./assets/images/flags/us.svg" alt="us"
+                                        class="w-5 h-5 rounded-full bg-cover"> USA
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center gap-x-2 font-semibold text-sm text-first anim hover:bg-second px-4 py-3">
+                                    <img src="./assets/images/flags/us.svg" alt="us"
+                                        class="w-5 h-5 rounded-full bg-cover"> USA
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- country -->
+
+                <!-- input box  -->
+                <input type="text" placeholder="Broad interest to explore"
+                    class="w-[70%] h-full absolute left-[94px] top-0 bottom-0 font-normal text-sm text-first px-4 rounded-xl xl:text-base xl:w-[80%]">
+                <!-- input box  -->
+
+                <!-- search button -->
+                <div class="w-full hidden xl:flex">
+                    <div class="absolute right-[14px] top-[50%] translate-y-[-50%] z-30 flex gap-x-4 items-center">
+                        <span class="inline-flex bg-[#F1F2F4] py-[6px] px-2">
+                            <svg width="8" height="16" viewBox="0 0 8 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 0L1.5748 16H0L6.4252 0H8Z" fill="#687588" />
+                            </svg>
+                        </span>
+                        <button type="button"
+                            class="bg-[#009688] inline-flex p-3 rounded-md gap-x-2 items-center font-bold text-lg text-white font-worksan group anim hover:bg-four">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21 21L16.7 16.7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span class="flex">Explore</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- search button -->
+            </div>
+            <!-- search -->
+
+            <!-- recent search -->
+            <div class="w-full mt-4">
+                <div class="flex items-center">
+                    <h5 class="text-sm font-normal text-second mr-4 xl:text-base">Recent Search :</h5>
+                    <ul class="flex gap-x-[10px] flex-wrap">
+                        <li>
+                            <a href="#"
+                                class="inline-flex bg-second px-2 py-1 rounded-md gap-x-2 h-[25px] items-center justify-center xl:h-7 xl:text-sm">
+                                <span class="font-medium text-third text-xs">Football (55) </span>
+                                <svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 8L8.5 1M1.5 1L8.5 8" stroke="#009688" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="inline-flex bg-second px-2 py-1 rounded-md gap-x-2 h-[25px] items-center justify-center xl:h-7 xl:text-sm">
+                                <span class="font-medium text-third text-xs">Dhaka (35) </span>
+                                <svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 8L8.5 1M1.5 1L8.5 8" stroke="#009688" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- recent search -->
+
+            <!-- main selection area -->
+            <div class="w-full rounded-[10px] border border-first mt-8 p-[14px] xl:p-6 xl:bg-white">
+                <div class="w-full flex items-start justify-between">
+                    <div class="flex flex-col xl:flex-row xl:gap-x-3 xl:items-center">
+                        <h2 class="text-four font-bold text-lg">Dhaka University</h2>
+                        <span class="block text-[#687588] font-normal text-sm xl:text-base">(10 Interests Found)</span>
+                    </div>
+                    <div class="relative">
+                        <button type="button"
+                            class="bg-third px-3 py-1 rounded-md text-sm font-medium text-[#1F2937] flex items-center gap-x-2 xl:h-8 xl:justify-center">Hide
+                            Suggestion
+                            <svg viewBox="0 0 16 16" class="w-4 h-4 text-[#1F2937]" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h5 class="text-[#687588] font-medium text-base">Suggestions</h5>
+
+                    <!-- suggetions -->
+                    <ul class="mt-[14px] flex flex-wrap gap-[10px]">
+                        <li>
+                            <a href="#"
+                                class="bg-third h-[28px] inline-flex items-center justify-center px-2 py-1 text-sm font-medium text-[#687588]">Northern
+                                University Bangladesh</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="bg-third h-[28px] inline-flex items-center justify-center px-2 py-1 text-sm font-medium text-[#687588]">Northern
+                                University</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="bg-third h-[28px] inline-flex items-center justify-center px-2 py-1 text-sm font-medium text-[#687588]">University
+                                of Dhaka</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="bg-third h-[28px] inline-flex items-center justify-center px-2 py-1 text-sm font-medium text-[#687588]">sylhet</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="bg-third h-[28px] inline-flex items-center justify-center px-2 py-1 text-sm font-medium text-[#687588]">dhaka
+                                division</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="bg-third h-[28px] inline-flex items-center justify-center px-2 py-1 text-sm font-medium text-[#687588]">dhaka
+                                division</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="bg-third h-[28px] inline-flex items-center justify-center px-2 py-1 text-sm font-medium text-[#687588]">Northern
+                                University</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="bg-third h-[28px] inline-flex items-center justify-center px-2 py-1 text-sm font-medium text-[#687588]">University
+                                of Dhaka</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="bg-third h-[28px] inline-flex items-center justify-center px-2 py-1 text-sm font-medium text-[#687588]">sylhet</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="bg-third h-[28px] inline-flex items-center justify-center px-2 py-1 text-sm font-medium text-[#687588]">dhaka
+                                division</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="bg-third h-[28px] inline-flex items-center justify-center px-2 py-1 text-sm font-medium text-[#687588]">dhaka
+                                division</a>
+                        </li>
+                    </ul>
+                    <!-- suggetions -->
+                </div>
+                <div class="w-full flex items-start justify-between mt-8">
+                    <div class="flex">
+                        <h2 class="text-four font-bold text-lg">Selection</h2>
+                    </div>
+                    <div class="relative">
+                        <button type="button" class="bg-[#FEF3F2] px-3 py-1 rounded-md text-sm font-medium text-[#F04438] inline-flex items-center gap-x-2 
+                            anim hover:bg-[#F04438] hover:text-white group">
+                            <svg class="w-[14px] h-[14px] text-[#F04438] group-hover:text-white anim"
+                                viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.5 10.5L10.5 3.5M3.5 3.5L10.5 10.5" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Clear selection
+                        </button>
+                    </div>
+                </div>
+                <!-- selected interest area -->
+                <div class="w-full mt-4 border border-[#E9EAEC] rounded-lg p-4 min-h-24 xl:bg-[#FAFAFA]">
+                    <p class="text-sm font-normal text-[#98A2B3]">Click interests below to add them to your selection
+                    </p>
+                </div>
+                <!-- selected state -->
+                <div class="w-full mt-4 border border-[#E9EAEC] rounded-lg p-4 min-h-24 xl:bg-[#FAFAFA]">
+                    <ul class="flex items-center gap-x-2 flex-wrap">
+                        <li
+                            class="bg-[#E0F2F1] h-[28px] inline-flex gap-x-2 items-center justify-center px-2 py-1 text-sm font-medium text-[#687588]">
+                            Northern University Bangladesh
+                            <button type="button">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 10.5L10.5 3.5M3.5 3.5L10.5 10.5" stroke="#687588" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- selected interest area -->
+                <!-- filter area -->
+                <div class="mt-4 w-full">
+                    <ul class="flex items-center justify-center gap-x-[10px] md:justify-end">
+                        <li>
+                            <a href="#"
+                                class="flex border border-[#E9EAEC] rounded-md h-[30px] px-[6px] items-center gap-x-2 text-sm font-medium text-[#323B49] group anim hover:bg-first hover:text-white group font-manrope xl:h-9 xl:justify-center">
+                                <svg viewBox="0 0 14 18" fill="none"
+                                    class="w-[14px] h-[18px] text-[#323B49] group-hover:text-white anim"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.50008 3.16667H2.83341C1.91294 3.16667 1.16675 3.91286 1.16675 4.83333V14.8333C1.16675 15.7538 1.91294 16.5 2.83341 16.5H11.1667C12.0872 16.5 12.8334 15.7538 12.8334 14.8333V4.83333C12.8334 3.91286 12.0872 3.16667 11.1667 3.16667H9.50008M4.50008 3.16667C4.50008 4.08714 5.24627 4.83333 6.16675 4.83333H7.83341C8.75389 4.83333 9.50008 4.08714 9.50008 3.16667M4.50008 3.16667C4.50008 2.24619 5.24627 1.5 6.16675 1.5H7.83341C8.75389 1.5 9.50008 2.24619 9.50008 3.16667M7.00008 9H9.50008M7.00008 12.3333H9.50008M4.50008 9H4.50841M4.50008 12.3333H4.50841"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <span class="xl:hidden">Copy</span>
+                                <span class="hidden xl:block">Copy to clipboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex border border-[#E9EAEC] rounded-md h-[30px] px-[6px] items-center gap-x-2 text-sm font-medium text-[#323B49] group anim hover:bg-first hover:text-white group font-manrope xl:h-9 xl:justify-center">
+                                <svg class="w-[18px] h-[18px] text-[#323B49] group-hover:text-white anim"
+                                    viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.35714 7.125L0.875 9L4.35714 10.875M4.35714 7.125L9 9.625L13.6429 7.125M4.35714 7.125L0.875 5.25L9 0.875L17.125 5.25L13.6429 7.125M13.6429 7.125L17.125 9L13.6429 10.875M13.6429 10.875L17.125 12.75L9 17.125L0.875 12.75L4.35714 10.875M13.6429 10.875L9 13.375L4.35714 10.875"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                                <span>Layering</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex border border-[#E9EAEC] rounded-md h-[30px] px-[6px] items-center gap-x-2 text-sm font-medium text-[#323B49] group anim hover:bg-first hover:text-white group font-manrope xl:h-9 xl:justify-center">
+
+                                <svg class="w-[18px] h-[16px] text-[#323B49] group-hover:text-white anim"
+                                    viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.66667 3.83325H3.16667C2.24619 3.83325 1.5 4.57944 1.5 5.49992V12.9999C1.5 13.9204 2.24619 14.6666 3.16667 14.6666H14.8333C15.7538 14.6666 16.5 13.9204 16.5 12.9999V5.49992C16.5 4.57944 15.7538 3.83325 14.8333 3.83325H12.3333M11.5 7.16659L9 9.66659M9 9.66659L6.5 7.16659M9 9.66659L9 1.33325"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span class="xl:hidden">Save</span>
+                                <span class="hidden xl:block">Save to project</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex border border-[#E9EAEC] rounded-md h-[30px] px-[6px] items-center gap-x-2 text-sm font-medium text-[#323B49] group anim hover:bg-first hover:text-white group font-manrope xl:h-9 xl:justify-center">
+
+                                <svg class="w-[18px] h-5 text-[#323B49] group-hover:text-white anim" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13 2V6C13 8.20914 14.7909 10 17 10L21 10M3 6L3 18C3 20.2091 4.79086 22 7 22H17C19.2091 22 21 20.2091 21 18V11.6569C21 10.596 20.5786 9.57857 19.8284 8.82843L14.1716 3.17157C13.4214 2.42143 12.404 2 11.3431 2L7 2C4.79086 2 3 3.79086 3 6Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                    <path
+                                        d="M8.23757 19C7.76442 19 7.36138 18.8956 7.02843 18.6867C6.69547 18.4756 6.44028 18.1822 6.26286 17.8067C6.08762 17.4311 6 16.9956 6 16.5C6 16.0044 6.08762 15.5689 6.26286 15.1933C6.44028 14.8178 6.69547 14.5256 7.02843 14.3167C7.36138 14.1056 7.76442 14 8.23757 14C8.78299 14 9.23423 14.14 9.59128 14.42C9.95051 14.7 10.2002 15.0767 10.3404 15.55L9.64385 15.74C9.55185 15.4044 9.38756 15.1411 9.15099 14.95C8.91661 14.7589 8.61214 14.6633 8.23757 14.6633C7.90242 14.6633 7.62314 14.74 7.39971 14.8933C7.17628 15.0467 7.00762 15.2611 6.89371 15.5367C6.782 15.8122 6.72614 16.1333 6.72614 16.5C6.72395 16.8667 6.77871 17.1878 6.89043 17.4633C7.00433 17.7389 7.173 17.9533 7.39643 18.1067C7.62204 18.26 7.90242 18.3367 8.23757 18.3367C8.61214 18.3367 8.91661 18.2411 9.15099 18.05C9.38756 17.8567 9.55185 17.5933 9.64385 17.26L10.3404 17.45C10.2002 17.9233 9.95051 18.3 9.59128 18.58C9.23423 18.86 8.78299 19 8.23757 19Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M12.9771 19C12.6376 19 12.331 18.9411 12.0571 18.8233C11.7855 18.7033 11.561 18.5333 11.3836 18.3133C11.2083 18.0911 11.0944 17.8278 11.0419 17.5233L11.7581 17.4133C11.8304 17.7067 11.9816 17.9356 12.2116 18.1C12.4416 18.2622 12.7099 18.3433 13.0166 18.3433C13.2071 18.3433 13.3824 18.3133 13.5423 18.2533C13.7022 18.1911 13.8303 18.1033 13.9267 17.99C14.0253 17.8744 14.0746 17.7367 14.0746 17.5767C14.0746 17.49 14.0592 17.4133 14.0286 17.3467C14.0001 17.28 13.9596 17.2222 13.907 17.1733C13.8566 17.1222 13.7942 17.0789 13.7197 17.0433C13.6474 17.0056 13.5675 16.9733 13.4799 16.9467L12.2674 16.5833C12.1491 16.5478 12.0287 16.5022 11.906 16.4467C11.7833 16.3889 11.6705 16.3144 11.5676 16.2233C11.4668 16.13 11.3847 16.0156 11.3211 15.88C11.2576 15.7422 11.2259 15.5756 11.2259 15.38C11.2259 15.0844 11.3003 14.8344 11.4493 14.63C11.6004 14.4233 11.8041 14.2678 12.0604 14.1633C12.3167 14.0567 12.6037 14.0033 12.9213 14.0033C13.2411 14.0078 13.527 14.0656 13.7789 14.1767C14.033 14.2878 14.2432 14.4478 14.4097 14.6567C14.5784 14.8633 14.6945 15.1144 14.758 15.41L14.022 15.5367C13.9891 15.3567 13.919 15.2022 13.8117 15.0733C13.7044 14.9422 13.573 14.8422 13.4174 14.7733C13.2619 14.7022 13.0932 14.6656 12.9114 14.6633C12.7362 14.6589 12.5752 14.6856 12.4284 14.7433C12.2839 14.8011 12.1678 14.8822 12.0801 14.9867C11.9947 15.0911 11.952 15.2111 11.952 15.3467C11.952 15.48 11.9903 15.5878 12.067 15.67C12.1437 15.7522 12.2379 15.8178 12.3496 15.8667C12.4635 15.9133 12.5763 15.9522 12.688 15.9833L13.562 16.2333C13.6715 16.2644 13.7953 16.3067 13.9333 16.36C14.0735 16.4111 14.2082 16.4833 14.3374 16.5767C14.4689 16.67 14.5773 16.7944 14.6627 16.95C14.7481 17.1033 14.7909 17.2967 14.7909 17.53C14.7909 17.7722 14.7427 17.9856 14.6463 18.17C14.5499 18.3522 14.4174 18.5056 14.2487 18.63C14.0822 18.7522 13.8895 18.8444 13.6704 18.9067C13.4514 18.9689 13.2203 19 12.9771 19Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M16.4733 18.9L14.9356 14.1H15.6486L16.9596 18.1967L18.287 14.1H19L17.4623 18.9H16.4733Z"
+                                        fill="currentColor" />
+                                </svg>
+
+                                <span class="xl:hidden">CSV</span>
+                                <span class="hidden xl:block">Export to CSV</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- filter area -->
+            </div>
+            <!-- main selection area -->
+
+            <!-- main response area -->
+            <div class="w-full mt-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center xl:gap-x-1">
+                        <h3 class="font-bold text-lg text-[#344054] hidden xl:block">Discover 85 Interest Connected to
+                        </h3>
+                        <h3 class="font-bold text-lg text-third"> “Fitness”</h3>
+                    </div>
+
+                    <div class="flex gap-x-[10px] items-center xl:gap-x-3">
+                        <button type="button"
+                            class="flex border bg-[#F1F2F4] border-[#E9EAEC] h-[30px] px-[6px] justify-center items-center gap-x-2 text-sm font-medium text-[#323B49] group anim rounded-md anim hover:bg-first hover:text-white xl:h-9 xl:px-2">
+                            <svg class="size-[18px] text-[#009688] group-hover:text-white anim" viewBox="0 0 18 18"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.00005 1.5C11.2956 1.5 13.546 1.69337 15.7359 2.06472C16.1799 2.14002 16.5 2.52796 16.5 2.97835V3.84835C16.5 4.34563 16.3025 4.82254 15.9508 5.17417L11.4242 9.70083C11.0725 10.0525 10.875 10.5294 10.875 11.0267V13.4662C10.875 14.1764 10.4737 14.8256 9.83853 15.1432L7.125 16.5V11.0267C7.125 10.5294 6.92746 10.0525 6.57583 9.70083L2.04917 5.17417C1.69754 4.82254 1.5 4.34563 1.5 3.84835V2.97837C1.5 2.52798 1.82006 2.14004 2.26412 2.06474C4.45399 1.69338 6.70444 1.5 9.00005 1.5Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Funnel</span>
+                        </button>
+                        <button type="button" class="text-sm font-medium text-third">Hide saved interests</button>
+                    </div>
+                </div>
+
+                <!-- response list area -->
+                <div class="w-full mt-4 bg-white border border-[#E9EAEC] rounded-lg">
+                    <!-- header -->
+                    <div class="w-full p-4 border-b border-[#E9EAEC] bg-first rounded-t-lg">
+                        <div class="w-full xl:grid xl:grid-cols-12">
+                            <div class="flex items-center xl:col-span-4">
+                                <div class="flex items-center">
+                                    <input id="default-checkbox" type="checkbox"
+                                        class="sr-only bg-transparent opacity-0" />
+                                    <label for="default-checkbox"
+                                        class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative bg-first">
+                                        <span
+                                            class="absolute inset-0 flex items-center justify-center text-white bg-first rounded-[4px]">
+                                            <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                    </label>
+                                    <label for="default-checkbox"
+                                        class="ms-3 text-base font-medium text-white dark:text-gray-300 cursor-pointer flex items-center gap-x-5">
+                                        Interest
+
+                                        <button type="button">
+                                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.83333 11.3333V1.33325M4.83333 1.33325L1.5 4.66659M4.83333 1.33325L8.16667 4.66659M13.1667 4.66659V14.6666M13.1667 14.6666L16.5 11.3333M13.1667 14.6666L9.83333 11.3333"
+                                                    stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="hidden items-center gap-x-5 xl:flex xl:col-span-2">
+                                <p class="text-base font-medium text-white dark:text-gray-300">Audience Size</p>
+                                <button type="button" class="block">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.83333 11.3333V1.33325M4.83333 1.33325L1.5 4.66659M4.83333 1.33325L8.16667 4.66659M13.1667 4.66659V14.6666M13.1667 14.6666L16.5 11.3333M13.1667 14.6666L9.83333 11.3333"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="hidden items-center gap-x-5 xl:flex xl:col-span-3">
+                                <p class="text-base font-medium text-white dark:text-gray-300">Additional Interest</p>
+                                <button type="button" class="block">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.83333 11.3333V1.33325M4.83333 1.33325L1.5 4.66659M4.83333 1.33325L8.16667 4.66659M13.1667 4.66659V14.6666M13.1667 14.6666L16.5 11.3333M13.1667 14.6666L9.83333 11.3333"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="hidden items-center gap-x-5 xl:flex xl:col-span-2">
+                                <p class="text-base font-medium text-white dark:text-gray-300">Topic</p>
+                                <button type="button" class="block">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.83333 11.3333V1.33325M4.83333 1.33325L1.5 4.66659M4.83333 1.33325L8.16667 4.66659M13.1667 4.66659V14.6666M13.1667 14.6666L16.5 11.3333M13.1667 14.6666L9.83333 11.3333"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="hidden items-center xl:flex xl:col-span-1">
+                                <p class="text-base font-medium text-white dark:text-gray-300">Investigate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- header -->
+
+                    <!-- body -->
+                    <div class="grid divide-y-[1px] divide-[#E9EAEC]">
+                        <!-- item -->
+                        <div
+                            class="flex gap-x-2 px-[14px] py-[18px] justify-between items-start xl:grid xl:grid-cols-12">
+                            <div class="text-start xl:col-span-11 xl:grid xl:grid-cols-11">
+                                <div class="flex items-center xl:col-span-4">
+                                    <input id="one-checkbox" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                    <label for="one-checkbox"
+                                        class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                        <span
+                                            class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                            <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                    </label>
+                                    <label for="one-checkbox"
+                                        class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                        Rem recusandae et dicta perferendis.
+                                    </label>
+                                </div>
+                                <div
+                                    class="flex items-center gap-x-2 mt-[6px] ml-6 xl:ml-0 xl:col-span-7 xl:grid xl:grid-cols-7">
+                                    <p class="text-xs font-normal text-[#687588] xl:text-sm xl:col-span-2">1.9K
+                                    </p>
+                                    <span class="block xl:hidden">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="2" cy="2.5" r="2" fill="#D9D9D9" />
+                                        </svg>
+                                    </span>
+                                    <p class="text-xs font-normal text-[#687588] xl:text-sm xl:col-span-3">Undefined
+                                    </p>
+                                    <span class="block xl:hidden">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="2" cy="2.5" r="2" fill="#D9D9D9" />
+                                        </svg>
+                                    </span>
+                                    <p
+                                        class="text-xs font-normal text-[#687588] flex items-center gap-x-1 xl:text-sm xl:col-span-2">
+                                        illo
+                                        eligendi et
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-end xl:col-span-1">
+                                <a href="#" target="_blank">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15 2.5H13.3333C10.5719 2.5 8.33333 4.73858 8.33333 7.5V8.33333H5V11.6667H8.33333V17.5H11.6667V11.6667H15V8.33333H11.6667V6.83333C11.6667 6.28105 12.1144 5.83333 12.6667 5.83333H15V2.5Z"
+                                            stroke="#687588" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <!-- item -->
+                        <div
+                            class="flex gap-x-2 px-[14px] py-[18px] justify-between items-start xl:grid xl:grid-cols-12">
+                            <div class="text-start xl:col-span-11 xl:grid xl:grid-cols-11">
+                                <div class="flex items-center xl:col-span-4">
+                                    <input id="one-checkbox" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                    <label for="one-checkbox"
+                                        class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                        <span
+                                            class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                            <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                    </label>
+                                    <label for="one-checkbox"
+                                        class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                        Unde quis nobis et eum omnis.
+                                    </label>
+                                </div>
+                                <div
+                                    class="flex items-center gap-x-2 mt-[6px] ml-6 xl:ml-0 xl:col-span-7 xl:grid xl:grid-cols-7">
+                                    <p class="text-xs font-normal text-[#687588] xl:text-sm xl:col-span-2">1.9K
+                                    </p>
+                                    <span class="block xl:hidden">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="2" cy="2.5" r="2" fill="#D9D9D9" />
+                                        </svg>
+                                    </span>
+                                    <p class="text-xs font-normal text-[#687588] xl:text-sm xl:col-span-3">Undefined
+                                    </p>
+                                    <span class="block xl:hidden">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="2" cy="2.5" r="2" fill="#D9D9D9" />
+                                        </svg>
+                                    </span>
+                                    <p
+                                        class="text-xs font-normal text-[#687588] flex items-center gap-x-1 xl:text-sm xl:col-span-2">
+                                        illo
+                                        eligendi et
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-end xl:col-span-1">
+                                <a href="#" target="_blank">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15 2.5H13.3333C10.5719 2.5 8.33333 4.73858 8.33333 7.5V8.33333H5V11.6667H8.33333V17.5H11.6667V11.6667H15V8.33333H11.6667V6.83333C11.6667 6.28105 12.1144 5.83333 12.6667 5.83333H15V2.5Z"
+                                            stroke="#687588" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <!-- item -->
+                        <div
+                            class="flex gap-x-2 px-[14px] py-[18px] justify-between items-start xl:grid xl:grid-cols-12">
+                            <div class="text-start xl:col-span-11 xl:grid xl:grid-cols-11">
+                                <div class="flex items-center xl:col-span-4">
+                                    <input id="one-checkbox" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                    <label for="one-checkbox"
+                                        class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                        <span
+                                            class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                            <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                    </label>
+                                    <label for="one-checkbox"
+                                        class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                        Exercitationem eius cupiditate corporis et.
+                                    </label>
+                                </div>
+                                <div
+                                    class="flex items-center gap-x-2 mt-[6px] ml-6 xl:ml-0 xl:col-span-7 xl:grid xl:grid-cols-7">
+                                    <p class="text-xs font-normal text-[#687588] xl:text-sm xl:col-span-2">1.9K
+                                    </p>
+                                    <span class="block xl:hidden">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="2" cy="2.5" r="2" fill="#D9D9D9" />
+                                        </svg>
+                                    </span>
+                                    <p class="text-xs font-normal text-[#687588] xl:text-sm xl:col-span-3">Undefined
+                                    </p>
+                                    <span class="block xl:hidden">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="2" cy="2.5" r="2" fill="#D9D9D9" />
+                                        </svg>
+                                    </span>
+                                    <p
+                                        class="text-xs font-normal text-[#687588] flex items-center gap-x-1 xl:text-sm xl:col-span-2">
+                                        illo
+                                        eligendi et
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-end xl:col-span-1">
+                                <a href="#" target="_blank">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15 2.5H13.3333C10.5719 2.5 8.33333 4.73858 8.33333 7.5V8.33333H5V11.6667H8.33333V17.5H11.6667V11.6667H15V8.33333H11.6667V6.83333C11.6667 6.28105 12.1144 5.83333 12.6667 5.83333H15V2.5Z"
+                                            stroke="#687588" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- item -->
+                    </div>
+                    <!-- body -->
+                </div>
+                <!-- response list area -->
+            </div>
+            <!-- main response area -->
+        </div>
+    </main>
+    <!-- main wrap -->
+
+    <!-- add layer modal start -->
+    <div
+        class="w-full fixed z-[9999] h-full top-0 left-0 right-0 bottom-0 bg-[#323B49] bg-opacity-40 p-6 flex justify-center items-center">
+        <div class="bg-white max-w-[380px] p-6 rounded-[10px] w-full shadow-one xl:max-w-[420px]">
+            <div class="flex justify-between items-center">
+                <h4 class="flex items-center gap-x-2 font-bold text-xl text-[#323B49] xl:text-2xl">
+                    <span class="size-[44px] rounded-full flex items-center justify-center bg-first">
+                        <svg class="size-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.42857 9.75L2.25 12L6.42857 14.25M6.42857 9.75L12 12.75L17.5714 9.75M6.42857 9.75L2.25 7.5L12 2.25L21.75 7.5L17.5714 9.75M17.5714 9.75L21.75 12L17.5714 14.25M17.5714 14.25L21.75 16.5L12 21.75L2.25 16.5L6.42857 14.25M17.5714 14.25L12 17.25L6.42857 14.25"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    Interests Layering
+                </h4>
+
+                <button type="button" class="flex -mt-3 xl:-mt-5">
+                    <svg class="size-4 xl:size-5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 12L12 4M4 4L12 12" stroke="#A0AEC0" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full mt-6">
+                <!-- layer actions -->
+                <div class="flex">
+                    <button type="button"
+                        class="border border-[#E9EAEC] rounded-md h-[38px] px-[10px] flex justify-center items-center gap-x-2 text-base font-medium text-[#323B49] group bg-[#FAFAFA] anim group hover:bg-first hover:text-white">
+                        <svg class="text-[#323B49] size-5 anim group-hover:text-white" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.66667 5.83334H4.16667C3.24619 5.83334 2.5 6.57953 2.5 7.5V15C2.5 15.9205 3.24619 16.6667 4.16667 16.6667H15.8333C16.7538 16.6667 17.5 15.9205 17.5 15V7.5C17.5 6.57953 16.7538 5.83334 15.8333 5.83334H13.3333M12.5 9.16667L10 11.6667M10 11.6667L7.5 9.16667M10 11.6667L10 3.33334"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>Download</span>
+                    </button>
+                </div>
+                <!-- layer actions -->
+
+                <div class="mt-[42px] grid">
+                    <!-- layer -->
+                    <div class="w-full">
+                        <div class="flex items-center gap-x-2">
+                            <button type="button" class="border border-[#E9EAEC] rounded-[4px] h-7 flex items-center justify-center px-[6px] text-[#323B49] font-medium text-sm gap-x-1 anim group hover:bg-first hover:text-white">
+                                <svg class="size-4 text-[#323B49] anim group-hover:text-white" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5 11.5V13.75C10.5 14.1642 10.1642 14.5 9.75 14.5H3.25C2.83579 14.5 2.5 14.1642 2.5 13.75V5.25C2.5 4.83579 2.83579 4.5 3.25 4.5H4.5C4.84071 4.5 5.17479 4.5284 5.5 4.58296M10.5 11.5H12.75C13.1642 11.5 13.5 11.1642 13.5 10.75V7.5C13.5 4.527 11.3377 2.05904 8.5 1.58296C8.17479 1.5284 7.84071 1.5 7.5 1.5H6.25C5.83579 1.5 5.5 1.83579 5.5 2.25V4.58296M10.5 11.5H6.25C5.83579 11.5 5.5 11.1642 5.5 10.75V4.58296M13.5 9V7.75C13.5 6.50736 12.4926 5.5 11.25 5.5H10.25C9.83579 5.5 9.5 5.16421 9.5 4.75V3.75C9.5 2.50736 8.49264 1.5 7.25 1.5H6.5"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span>Copy</span>
+                            </button>
+                            <button type="button" class="border border-[#E9EAEC] rounded-[4px] h-7 flex items-center justify-center px-[6px] text-[#323B49] font-medium text-sm gap-x-1 anim group hover:bg-[#F04438] hover:text-white">
+                                
+                                <svg class="size-[10px] text-[#323B49] anim group-hover:text-white"  viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 9L9 1M1 1L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                <span>Remove</span>
+                            </button>
+                        </div>
+
+                        <div class="border border-[#E9EAEC] bg-white rounded-md p-[10px] mt-2">
+                            <ul class="flex items-center gap-2 flex-wrap">
+                                <li
+                                    class="bg-[#F8F8F8] h-[28px] inline-flex gap-x-2 items-center justify-center px-2 py-1 text-sm font-medium text-[#687588] rounded-md">
+                                    Northern University Bangladesh 
+                                </li>
+                                <li
+                                    class="bg-[#F8F8F8] h-[28px] inline-flex gap-x-2 items-center justify-center px-2 py-1 text-sm font-medium text-[#687588] rounded-md">
+                                    Northern  
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- layer -->
+                </div>
+
+                <!-- add layer -->
+                 <div class="text-end mt-6">
+                    <button type="button" class="inline-flex bg-[#009688] rounded-md py-[10px] px-4 text-white font-semibold text-base anim hover:bg-four">
+                        Add Layer
+                    </button>
+                 </div>
+                <!-- add layer -->
+
+            </div>
+        </div>
+    </div>
+    <!-- add layer modal end -->
+
+</body>
+
+</html>
