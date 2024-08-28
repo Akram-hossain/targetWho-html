@@ -29,6 +29,7 @@ module.exports = {
       fontFamily: {
         'worksan': ['Work Sans', 'sans-serif'], 
         'jakarta': ['Plus Jakarta Sans', 'sans-serif'], 
+        'manrope': ['Manrope', 'sans-serif'], 
       },
       backgroundColor: {
         'first': '#009688', 

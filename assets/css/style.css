@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -29,4 +29,15 @@ h1,h2,h3,h4,h5,h6{
 
 input{
     @apply focus-within:shadow-none focus-within:border-0 focus-visible:border-0 focus-visible:shadow-none outline-none
+}
+
+#default-checkbox:checked + label::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+#default-checkbox:checked + label span svg {
+    display: block;
 }
