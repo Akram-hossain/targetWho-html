@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Giopio is a Digital Agency">
+    <meta property="og:title" content="Giopio">
+    <meta property="og:type" content="Digital Agency">
+    <meta property="og:url" content="https://giopio.com/">
+    <meta property="og:image" content="https://giopio.com/wp-content/uploads/2023/11/main-logo-dark.png">
+    <meta name="theme-color" content="#009688">
+
+    <link rel="shortcut icon" href="./assets/images/icons/favicon.svg" type="image/x-icon">
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <title>TargetWho || Dashboard </title>
+</head>
+
+<body class="font-worksan">
+
+    <!-- header -->
+    <header class="w-full py-3 px-6 xl:py-5 xl:z-[9999] xl:bg-white xl:fixed xl:top-0 xl:left-0 xl:right-0">
+        <div class="container-fluid">
+            <div class="grid items-center grid-cols-3">
+                <!-- humburger -->
+                <div class="w-full xl:hidden">
+                    <button type="button">
+                        <img src="./assets/images/icons/humburg.svg" alt="humburg">
+                    </button>
+                </div>
+                <!-- humburger -->
+
+                <!-- brand -->
+                <div class="w-full">
+                    <a href="index.html">
+                        <img src="./assets/images/logo.svg" alt="targetWho" class="max-w-[125px] xl:max-w-[168px]">
+                    </a>
+                </div>
+                <!-- brand -->
+
+                <!-- actions -->
+                <div class="w-full text-end xl:col-span-2 xl:flex xl:justify-end xl:gap-x-4 xl:items-center">
+                    <button type="button" class="hidden xl:flex relative">
+                        <span
+                            class="size-2 rounded-full bg-[#F04438] block absolute right-0 -top-1 ring ring-white"></span>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.8091 19.7756C19.3352 19.476 21.7711 18.8821 24.0815 18.0292C22.1658 15.9027 20.9997 13.0875 20.9997 10V9.06558C20.9999 9.04374 21 9.02188 21 9C21 4.58172 17.4183 1 13 1C8.58172 1 5 4.58172 5 9L4.99974 10C4.99974 13.0875 3.8337 15.9027 1.91797 18.0292C4.22854 18.8821 6.66458 19.4761 9.19085 19.7757M16.8091 19.7756C15.56 19.9238 14.2888 20 12.9997 20C11.7109 20 10.4398 19.9238 9.19085 19.7757M16.8091 19.7756C16.9331 20.1615 17 20.5729 17 21C17 23.2091 15.2091 25 13 25C10.7909 25 9 23.2091 9 21C9 20.573 9.06692 20.1615 9.19085 19.7757"
+                                stroke="#687588" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button type="button" class="flex">
+                        <img src="./assets/images/avatar.png" alt="avatar"
+                            class="w-6 h-6 rounded-full object-cover xl:size-[42px]">
+                    </button>
+                    <button type="button" class="hidden xl:flex">
+                        <svg class="size-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 9C15.4477 9 15 8.55228 15 8C15 7.44772 15.4477 7 16 7C16.5523 7 17 7.44772 17 8C17 8.55228 16.5523 9 16 9Z"
+                                stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M16 17C15.4477 17 15 16.5523 15 16C15 15.4477 15.4477 15 16 15C16.5523 15 17 15.4477 17 16C17 16.5523 16.5523 17 16 17Z"
+                                stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M16 25C15.4477 25 15 24.5523 15 24C15 23.4477 15.4477 23 16 23C16.5523 23 17 23.4477 17 24C17 24.5523 16.5523 25 16 25Z"
+                                stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                </div>
+                <!-- actions -->
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- sidebar -->
+    <aside
+        class="w-[90%] font-jakarta fixed left-0 top-0 bottom-0 z-[9999] bg-gray-100 py-8 px-6 hidden xl:flex xl:max-w-[30%] xl:w-[400px] xl:z-[999] xl:pt-28 xl:bg-white xl:pr-16">
+        <ul class="flex flex-col gap-y-2 xl:w-full">
+            <li>
+                <a href="#" class="menu-link active group anim">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 text-[#687588]">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link group anim">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="size-6 text-[#687588]">
+                        <path
+                            d="M19 2H21C21.5523 2 22 2.44772 22 3V5M21 3C13.0585 9.39136 8.94212 11.1129 2 12M18 10V20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20V10C22 8.89543 21.1046 8 20 8C18.8954 8 18 8.89543 18 10ZM2 18L2 20C2 21.1046 2.89543 22 4 22C5.10457 22 6 21.1046 6 20L6 18C6 16.8954 5.10457 16 4 16C2.89543 16 2 16.8954 2 18ZM10 14V20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20V14C14 12.8954 13.1046 12 12 12C10.8954 12 10 12.8954 10 14Z"
+                            stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span>Project</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link group anim">
+                    <svg class="size-6 text-[#687588]" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 3.05493C6.50005 3.55237 3 7.36744 3 12C3 16.9706 7.02944 21 12 21C16.6326 21 20.4476 17.4999 20.9451 13H11V3.05493Z"
+                            stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.4878 9H15V3.5123C17.5572 4.41613 19.5839 6.44284 20.4878 9Z" stroke="#687588"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span>Search History</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link group anim">
+                    <svg class="size-6 text-[#687588]" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="12" cy="16.5" rx="6" ry="2.5" stroke="#687588" stroke-width="1.5"
+                            stroke-linejoin="round" />
+                        <circle cx="12" cy="8" r="3" stroke="#687588" stroke-width="1.5" stroke-linejoin="round" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.44547 13.2615C5.20689 13.313 4.06913 13.5361 3.18592 13.8894C2.68122 14.0913 2.22245 14.3505 1.87759 14.6766C1.53115 15.0042 1.25 15.4512 1.25 16C1.25 16.5488 1.53115 16.9958 1.87759 17.3234C2.22245 17.6495 2.68122 17.9087 3.18592 18.1106C3.68571 18.3105 4.26701 18.4687 4.90197 18.5778C4.40834 18.0453 4.09852 17.4503 4.01985 16.8195C3.92341 16.787 3.83104 16.7531 3.74301 16.7179C3.34289 16.5578 3.06943 16.386 2.90826 16.2336C2.7498 16.0837 2.74999 16.0046 2.75 16.0001L2.75 16L2.75 15.9999C2.74999 15.9954 2.7498 15.9163 2.90826 15.7664C3.06943 15.614 3.34289 15.4422 3.74301 15.2821C3.94597 15.201 4.17201 15.1266 4.41787 15.0608C4.83157 14.371 5.53447 13.756 6.44547 13.2615Z"
+                            fill="#687588" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9801 16.8195C19.9014 17.4503 19.5916 18.0453 19.0979 18.5778C19.7329 18.4687 20.3142 18.3105 20.814 18.1106C21.3187 17.9087 21.7775 17.6495 22.1223 17.3234C22.4688 16.9958 22.7499 16.5488 22.7499 16C22.7499 15.4512 22.4688 15.0042 22.1223 14.6766C21.7775 14.3505 21.3187 14.0913 20.814 13.8894C19.9308 13.5361 18.793 13.313 17.5544 13.2615C18.4654 13.756 19.1683 14.371 19.582 15.0608C19.8279 15.1266 20.0539 15.201 20.2569 15.2821C20.657 15.4422 20.9305 15.614 21.0917 15.7664C21.2501 15.9163 21.2499 15.9954 21.2499 15.9999V16V16.0001C21.2499 16.0046 21.2501 16.0837 21.0917 16.2336C20.9305 16.386 20.657 16.5578 20.2569 16.7179C20.1689 16.7531 20.0765 16.787 19.9801 16.8195Z"
+                            fill="#687588" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.5145 10.1522C16.2946 10.6126 16.0063 11.0341 15.6628 11.4036C16.0587 11.6243 16.5147 11.75 17.0001 11.75C18.5188 11.75 19.7501 10.5188 19.7501 9C19.7501 7.48122 18.5188 6.25 17.0001 6.25C16.8958 6.25 16.7929 6.2558 16.6916 6.26711C16.8637 6.73272 16.9684 7.23096 16.9939 7.75001C16.996 7.75 16.998 7.75 17.0001 7.75C17.6904 7.75 18.2501 8.30964 18.2501 9C18.2501 9.69036 17.6904 10.25 17.0001 10.25C16.8278 10.25 16.6637 10.2152 16.5145 10.1522Z"
+                            fill="#687588" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.30845 6.26711C7.20719 6.2558 7.10427 6.25 7 6.25C5.48122 6.25 4.25 7.48122 4.25 9C4.25 10.5188 5.48122 11.75 7 11.75C7.48537 11.75 7.94138 11.6243 8.33721 11.4036C7.99374 11.0341 7.70549 10.6126 7.4856 10.1522C7.33631 10.2152 7.17222 10.25 7 10.25C6.30964 10.25 5.75 9.69036 5.75 9C5.75 8.30964 6.30964 7.75 7 7.75C7.00205 7.75 7.00409 7.75 7.00614 7.75001C7.0317 7.23096 7.13641 6.73272 7.30845 6.26711Z"
+                            fill="#687588" />
+                    </svg>
+
+
+                    <span>Team</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link group anim">
+                    <svg class="size-6 text-[#687588]" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.3246 4.31731C10.751 2.5609 13.249 2.5609 13.6754 4.31731C13.9508 5.45193 15.2507 5.99038 16.2478 5.38285C17.7913 4.44239 19.5576 6.2087 18.6172 7.75218C18.0096 8.74925 18.5481 10.0492 19.6827 10.3246C21.4391 10.751 21.4391 13.249 19.6827 13.6754C18.5481 13.9508 18.0096 15.2507 18.6172 16.2478C19.5576 17.7913 17.7913 19.5576 16.2478 18.6172C15.2507 18.0096 13.9508 18.5481 13.6754 19.6827C13.249 21.4391 10.751 21.4391 10.3246 19.6827C10.0492 18.5481 8.74926 18.0096 7.75219 18.6172C6.2087 19.5576 4.44239 17.7913 5.38285 16.2478C5.99038 15.2507 5.45193 13.9508 4.31731 13.6754C2.5609 13.249 2.5609 10.751 4.31731 10.3246C5.45193 10.0492 5.99037 8.74926 5.38285 7.75218C4.44239 6.2087 6.2087 4.44239 7.75219 5.38285C8.74926 5.99037 10.0492 5.45193 10.3246 4.31731Z"
+                            stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                            stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menu-link group anim">
+                    <svg class="size-6 text-[#687588]" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 17H20L18.5951 15.5951C18.2141 15.2141 18 14.6973 18 14.1585V11C18 8.38757 16.3304 6.16509 14 5.34142V5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5V5.34142C7.66962 6.16509 6 8.38757 6 11V14.1585C6 14.6973 5.78595 15.2141 5.40493 15.5951L4 17H9M15 17V18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18V17M15 17H9"
+                            stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span>Notifications</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- sidebar -->
+    <!-- main wrap -->
+    <main class="w-full bg-white px-6 lg:px-0 mt-[10px] pb-5 xl:pl-[400px] xl:pt-[82px] xl:pb-2">
+        <div class="xl:bg-[#FAFAFA] h-full w-full xl:border xl:border-[#E9EAEC] xl:border-r-0 xl:border-b-0 xl:p-6 xl:rounded-tl-2xl">
+            <!-- team-content --> 
+            <!--  -->
+            <div class="lg:px-8 xl:px-0 grid grid-cols-1 xl:grid-cols-[40%_60%]">
+                <div class="xl:pr-6">
+                    <h3 class="pt-3 font-jakarta font-bold text-[32px] text-[#323B49]">Team</h3>
+                    <div class="flex flex-col">
+                        <a href="#" class="hover:border-[#009688] anim flex flex-col lg:flex-row lg:items-center  lg:gap-6 xl:gap-[32px] mt-[22px] border border-solid border-[#E9EAEC]  rounded-[10px] p-6 w-full">
+                            <div class="">
+                                <img class="w-[132px] h-[132px] rounded-full" src="assets/images/ellipse-img.png" alt="img">
+                            </div>
+                            <div class="flex flex-col ">
+                                <h4 class="pt-[32px] md:pt-0 pb-[16px] font-jakarta font-bold text-[24px] lg:text-[26px] xl:text-[32px] text-[#323B49]">Digital Marketing</h4>
+                                <ul>
+                                    <li class="pb-[6px] last:pb-0 font-worksan font-medium text-[18px] text-[#687588]">Owner Name : Jhon Doe</li>
+                                    <li class="pb-[6px] last:pb-0 font-worksan font-medium text-[18px] text-[#687588]">Member of Team : 65+</li>
+                                    <li class="pb-[6px] last:pb-0 font-worksan font-medium text-[18px] text-[#687588]">Number of Project : 65+</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="hover:border-[#009688] anim flex flex-wrap flex-col lg:flex-row    lg:items-center lg:gap-6 xl:gap-[32px] mt-[22px] border border-solid border-[#E9EAEC]  rounded-[10px] p-6 w-full">
+                            <div class="">
+                                <img class="w-[132px] h-[132px] rounded-full" src="assets/images/ellipse-img.png" alt="img">
+                            </div>
+                            <div class="flex flex-col ">
+                                <h4 class="pt-[32px] md:pt-0 pb-[16px] font-jakarta font-bold text-[24px] lg:text-[26px] xl:text-[32px] text-[#323B49]">Digital Marketing</h4>
+                                <ul>
+                                    <li class="pb-[6px] last:pb-0 font-worksan font-medium text-[18px] text-[#687588]">Owner Name : Jhon Doe</li>
+                                    <li class="pb-[6px] last:pb-0 font-worksan font-medium text-[18px] text-[#687588]">Member of Team : 65+</li>
+                                    <li class="pb-[6px] last:pb-0 font-worksan font-medium text-[18px] text-[#687588]">Number of Project : 65+</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="hover:border-[#009688] anim flex flex-wrap flex-col lg:flex-row lg:items-center lg:gap-6 xl:gap-[32px] mt-[22px] border border-solid border-[#E9EAEC]  rounded-[10px] p-6 w-full">
+                            <div class="">
+                                <img class="w-[132px] h-[132px] rounded-full" src="assets/images/ellipse-img.png" alt="img">
+                            </div>
+                            <div class="flex flex-col ">
+                                <h4 class="pt-[32px] md:pt-0 pb-[16px] font-jakarta font-bold text-[24px] lg:text-[26px] xl:text-[32px] text-[#323B49]">Digital Marketing</h4>
+                                <ul>
+                                    <li class="pb-[6px] last:pb-0 font-worksan font-medium text-[18px] text-[#687588]">Owner Name : Jhon Doe</li>
+                                    <li class="pb-[6px] last:pb-0 font-worksan font-medium text-[18px] text-[#687588]">Member of Team : 65+</li>
+                                    <li class="pb-[6px] last:pb-0 font-worksan font-medium text-[18px] text-[#687588]">Number of Project : 65+</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full mt-[75px] lg:mt-0">
+                    <h3 class="lg:pt-3 font-jakarta font-bold text-[32px] text-[#323B49]">Team Details</h3>
+                    <div class="w-full flex flex-col">
+                        <div class="mt-[22px] border border-solid border-[#E9EAEC] bg-white rounded-[10px] p-6 w-full">
+                            <div class="w-full xl:min-h-[309px] flex-wrap xl:flex xl:justify-between">
+                                <div class="flex flex-col">
+                                    <div class="">
+                                        <img class="w-[132px] h-[132px] rounded-full" src="assets/images/ellipse-img.png" alt="img"> 
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="pt-[32px] pb-[16px] font-jakarta font-bold text-[24px] lg:text-[26px] xl:text-[32px] text-[#323B49]">Digital Marketing</h4>
+                                        <ul>
+                                            <li class="pb-[6px] last:pb-0 font-worksan font-medium text-[18px] text-[#687588]">Owner Name : Jhon Doe</li>
+                                            <li class="pb-[6px] last:pb-0 font-worksan font-medium text-[18px] text-[#687588]">Member of Team : 65+</li>
+                                            <li class="pb-[6px] last:pb-0 font-worksan font-medium text-[18px] text-[#687588]">Number of Project : 65+</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- button-side -->
+                                <div class="pt-[32px] xl:pt-0 flex flex-col xl:justify-between xl:items-end gap-[10px]">
+                                    <div class="flex xl:order-2 items-center gap-[10px]">
+                                        <a href="#" class="inline-block py-[10px] px-[32px] bg-[#009688] rounded-[6px] font-worksan font-medium text-[16px] text-white anim hover:bg-four">View Project</a>
+                                        <a href="#" class="inline-block py-[10px] px-[32px] bg-[#E9EAEC] rounded-[6px] font-worksan font-medium text-[16px] text-[#323B49] anim hover:bg-first hover:text-white">View Team</a> 
+                                    </div>
+                                    <div class="flex xl:order-1">
+                                        <a href="#" class="inline-flex items-center gap-[10px] py-[10px] px-4 bg-[#FEE4E2] rounded-[6px] font-worksan font-medium text-[16px] text-[#323B49] group anim hover:bg-danger hover:text-white">
+                                            <svg class="size-5 text-[#323B49] group-hover:text-white anim" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.875 6.25L16.3538 15.1101C16.2955 16.1012 15.4748 16.875 14.4821 16.875H5.51795C4.52518 16.875 3.70448 16.1012 3.64618 15.1101L3.125 6.25M8.125 9.6875L10 11.5625M10 11.5625L11.875 13.4375M10 11.5625L11.875 9.6875M10 11.5625L8.125 13.4375M2.8125 6.25H17.1875C17.7053 6.25 18.125 5.83027 18.125 5.3125V4.0625C18.125 3.54473 17.7053 3.125 17.1875 3.125H2.8125C2.29473 3.125 1.875 3.54473 1.875 4.0625V5.3125C1.875 5.83027 2.29473 6.25 2.8125 6.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>   
+                                            <span>Delete Team</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="border border-solid border-filter bg-[#FAFAFA] rounded-[10px] p-6 mt-[32px]">
+                                    <h4 class="pb-6 font-jakarta font-bold text-md xl:text-[32px] leading-[41px] text-blueblack">Team  Project</h4>
+                                    <div class="">
+                                        <div class="w-full bg-[#009688] p-4 rounded-tl-[8px] rounded-tr-[8px]">
+                                            <div class="grid grid-cols-[60%_40%] items-center md:grid-cols-[40%_20%_20%_20%]">
+                                            <div class="">
+                                                <h4 class="font-worksan text-white font-medium text-[18px] truncate">Project</h4>
+                                            </div>
+                                            <div class="hidden md:inline-block">
+                                                <div class="flex items-center gap-[20px]">
+                                                    <h5 class="font-worksan text-white font-medium text-[18px] truncate">Category</h5>
+                                                    <button type="button" class="block">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.83333 13.8333V3.83334M5.83333 3.83334L2.5 7.16668M5.83333 3.83334L9.16667 7.16668M14.1667 7.16668V17.1667M14.1667 17.1667L17.5 13.8333M14.1667 17.1667L10.8333 13.8333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg> 
+                                                    </button> 
+                                                </div>
+                                            </div>
+                                            <div class="hidden md:inline-block">
+                                                <h5 class="font-worksan text-white font-medium text-[18px] truncate">Interest</h5>
+                                            </div> 
+                                            <div class="flex items-center gap-[20px]">
+                                              <h5 class="font-worksan text-white font-medium text-[18px] truncate">Action</h5>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="border border-solid border-balck rounded-bl-[8px] rounded-br-[8px]">
+                                            <!-- item -->
+                                            <div class="w-full border-b border-solid border-filter p-4 bg-white last:rounded-b-lg anim hover:bg-second">
+                                                <div class="grid grid-cols-[60%_40%] items-center md:grid-cols-[40%_20%_20%_20%]">
+                                                    <div class="">
+                                                        <h4 class="pt-1 truncate font-worksan text-[#687588] font-medium text-[18px]">Unde quis nobis et eum</h4>
+                                                    </div>
+                                                    <div class="hidden md:inline-block">
+                                                        <div class="flex items-center gap-[20px]">
+                                                            <h5 class="truncate font-worksan text-[#687588] font-normal text-[16px]">Test</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hidden md:inline-block">
+                                                        <div class="flex items-center gap-[20px]">
+                                                            <h5 class="truncate font-worksan text-[#687588] font-normal text-[16px]">60</h5>  
+                                                        </div>
+                                                    </div> 
+                                                    <div class="flex items-center gap-[12px]">
+                                                        <button type="button" class="w-8 h-8 bg-[#F1F2F4] anim hover:bg-second flex justify-center items-center rounded-[6px]">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M14.0514 3.73889L15.4576 2.33265C16.0678 1.72245 17.0572 1.72245 17.6674 2.33265C18.2775 2.94284 18.2775 3.93216 17.6674 4.54235L8.81849 13.3912C8.37792 13.8318 7.83453 14.1556 7.23741 14.3335L5 15L5.66648 12.7626C5.84435 12.1655 6.1682 11.6221 6.60877 11.1815L14.0514 3.73889ZM14.0514 3.73889L16.25 5.93749M15 11.6667V15.625C15 16.6605 14.1605 17.5 13.125 17.5H4.375C3.33947 17.5 2.5 16.6605 2.5 15.625V6.87499C2.5 5.83946 3.33947 4.99999 4.375 4.99999H8.33333" stroke="#323B49" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg> 
+                                                        </button>
+
+                                                        <button type="button" class="w-8 h-8 bg-[#009688] flex justify-center items-center rounded-[6px] anim hover:bg-four">
+                                                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.125 13.375V16.1875C11.125 16.7053 10.7053 17.125 10.1875 17.125H2.0625C1.54473 17.125 1.125 16.7053 1.125 16.1875V5.5625C1.125 5.04473 1.54473 4.625 2.0625 4.625H3.625C4.05089 4.625 4.46849 4.6605 4.875 4.7287M11.125 13.375H13.9375C14.4553 13.375 14.875 12.9553 14.875 12.4375V8.375C14.875 4.65876 12.1721 1.5738 8.625 0.978698C8.21849 0.910499 7.80089 0.875 7.375 0.875H5.8125C5.29473 0.875 4.875 1.29473 4.875 1.8125V4.7287M11.125 13.375H5.8125C5.29473 13.375 4.875 12.9553 4.875 12.4375V4.7287M14.875 10.25V8.6875C14.875 7.1342 13.6158 5.875 12.0625 5.875H10.8125C10.2947 5.875 9.875 5.45527 9.875 4.9375V3.6875C9.875 2.1342 8.6158 0.875 7.0625 0.875H6.125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>    
+                                                        </button>
+                                                        <div class="cursor-pointer w-8 h-8 bg-[#F04438] flex justify-center items-center rounded-[6px] anim hover:bg-first">
+                                                            <svg class="size-5 text-white" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16.875 6.25L16.3538 15.1101C16.2955 16.1012 15.4748 16.875 14.4821 16.875H5.51795C4.52518 16.875 3.70448 16.1012 3.64618 15.1101L3.125 6.25M8.125 9.6875L10 11.5625M10 11.5625L11.875 13.4375M10 11.5625L11.875 9.6875M10 11.5625L8.125 13.4375M2.8125 6.25H17.1875C17.7053 6.25 18.125 5.83027 18.125 5.3125V4.0625C18.125 3.54473 17.7053 3.125 17.1875 3.125H2.8125C2.29473 3.125 1.875 3.54473 1.875 4.0625V5.3125C1.875 5.83027 2.29473 6.25 2.8125 6.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>  
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                             <!--item  -->
+                                            <!-- item -->
+                                            <div class="w-full border-b border-solid border-filter p-4 bg-white last:rounded-b-lg  anim hover:bg-second">
+                                                <div class="grid grid-cols-[60%_40%] items-center md:grid-cols-[40%_20%_20%_20%]">
+                                                    <div class="">
+                                                        <h4 class="pt-1 truncate font-worksan text-[#687588] font-medium text-[18px]">Unde quis nobis et eum</h4>
+                                                    </div>
+                                                    <div class="hidden md:inline-block">
+                                                        <div class="flex items-center gap-[20px]">
+                                                            <h5 class="truncate font-worksan text-[#687588] font-normal text-[16px]">Test</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hidden md:inline-block">
+                                                        <div class="flex items-center gap-[20px]">
+                                                            <h5 class="truncate font-worksan text-[#687588] font-normal text-[16px]">60</h5>  
+                                                        </div>
+                                                    </div> 
+                                                    <div class="flex items-center gap-[12px]">
+                                                        <button type="button" class="w-8 h-8 bg-[#F1F2F4] anim hover:bg-second flex justify-center items-center rounded-[6px]">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M14.0514 3.73889L15.4576 2.33265C16.0678 1.72245 17.0572 1.72245 17.6674 2.33265C18.2775 2.94284 18.2775 3.93216 17.6674 4.54235L8.81849 13.3912C8.37792 13.8318 7.83453 14.1556 7.23741 14.3335L5 15L5.66648 12.7626C5.84435 12.1655 6.1682 11.6221 6.60877 11.1815L14.0514 3.73889ZM14.0514 3.73889L16.25 5.93749M15 11.6667V15.625C15 16.6605 14.1605 17.5 13.125 17.5H4.375C3.33947 17.5 2.5 16.6605 2.5 15.625V6.87499C2.5 5.83946 3.33947 4.99999 4.375 4.99999H8.33333" stroke="#323B49" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg> 
+                                                        </button>
+
+                                                        <button type="button" class="w-8 h-8 bg-[#009688] flex justify-center items-center rounded-[6px] anim hover:bg-four">
+                                                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.125 13.375V16.1875C11.125 16.7053 10.7053 17.125 10.1875 17.125H2.0625C1.54473 17.125 1.125 16.7053 1.125 16.1875V5.5625C1.125 5.04473 1.54473 4.625 2.0625 4.625H3.625C4.05089 4.625 4.46849 4.6605 4.875 4.7287M11.125 13.375H13.9375C14.4553 13.375 14.875 12.9553 14.875 12.4375V8.375C14.875 4.65876 12.1721 1.5738 8.625 0.978698C8.21849 0.910499 7.80089 0.875 7.375 0.875H5.8125C5.29473 0.875 4.875 1.29473 4.875 1.8125V4.7287M11.125 13.375H5.8125C5.29473 13.375 4.875 12.9553 4.875 12.4375V4.7287M14.875 10.25V8.6875C14.875 7.1342 13.6158 5.875 12.0625 5.875H10.8125C10.2947 5.875 9.875 5.45527 9.875 4.9375V3.6875C9.875 2.1342 8.6158 0.875 7.0625 0.875H6.125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>    
+                                                        </button>
+                                                        <div class="cursor-pointer w-8 h-8 bg-[#F04438] flex justify-center items-center rounded-[6px] anim hover:bg-first">
+                                                            <svg class="size-5 text-white" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16.875 6.25L16.3538 15.1101C16.2955 16.1012 15.4748 16.875 14.4821 16.875H5.51795C4.52518 16.875 3.70448 16.1012 3.64618 15.1101L3.125 6.25M8.125 9.6875L10 11.5625M10 11.5625L11.875 13.4375M10 11.5625L11.875 9.6875M10 11.5625L8.125 13.4375M2.8125 6.25H17.1875C17.7053 6.25 18.125 5.83027 18.125 5.3125V4.0625C18.125 3.54473 17.7053 3.125 17.1875 3.125H2.8125C2.29473 3.125 1.875 3.54473 1.875 4.0625V5.3125C1.875 5.83027 2.29473 6.25 2.8125 6.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>  
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                             <!--item  -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- button-side --> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <!-- team-content --> 
+        </div>
+    </main>
+    <!-- main wrap -->
+
+</body>
+
+</html>
