@@ -17,7 +17,7 @@
     <title>TargetWho || Dashboard </title>
 </head>
 
-<body class="font-worksan">
+<body class="font-worksan overflow-hidden">
 
     <!-- header -->
     <header class="w-full py-3 px-6 xl:py-5 xl:z-[9999] xl:bg-white xl:fixed xl:top-0 xl:left-0 xl:right-0">
@@ -50,7 +50,7 @@
                                 stroke="#687588" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
-                    <button type="button" class="">
+                    <button type="button" class="flex">
                         <img src="./assets/images/avatar.png" alt="avatar"
                             class="w-6 h-6 rounded-full object-cover xl:size-[42px]">
                     </button>
@@ -762,6 +762,341 @@
         </div>
     </main>
     <!-- main wrap -->
+
+    <!-- funnel filter modal start -->
+    <div
+        class="w-full fixed z-[9999] h-full top-0 left-0 right-0 bottom-0 bg-[#323B49] bg-opacity-40 p-6 flex justify-center items-center">
+        <div class="bg-white max-w-[380px] p-6 rounded-[10px] w-full shadow-one xl:max-w-[664px]">
+            <div class="flex justify-between items-center">
+                <h4 class="flex items-center gap-x-2 font-bold text-xl text-[#323B49] xl:text-2xl">
+                    <span class="size-[44px] rounded-full flex items-center justify-center bg-first">
+                        <svg class="size-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.0001 3C14.7548 3 17.4552 3.23205 20.0831 3.67767C20.6159 3.76803 21 4.23355 21 4.77402V5.81802C21 6.41476 20.7629 6.98705 20.341 7.40901L14.909 12.841C14.4871 13.2629 14.25 13.8352 14.25 14.432V17.3594C14.25 18.2117 13.7685 18.9908 13.0062 19.3719L9.75 21V14.432C9.75 13.8352 9.51295 13.2629 9.09099 12.841L3.65901 7.40901C3.23705 6.98705 3 6.41476 3 5.81802V4.77404C3 4.23357 3.38408 3.76805 3.91694 3.67769C6.54479 3.23206 9.24533 3 12.0001 3Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    Funnel
+                </h4>
+
+                <button type="button" class="flex -mt-3 xl:-mt-5">
+                    <svg class="size-4 xl:size-5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 12L12 4M4 4L12 12" stroke="#A0AEC0" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full mt-6 bg-[#FAFAFA] rounded-md border border-[#E9EAEC] py-[14px] px-4 xl:flex xl:items-center xl:gap-x-6">
+                <h5 class="text-base font-medium text-[#323B49]">Audience Size</h5>
+
+                <div class="mt-6 border border-[#E9EAEC] rounded-md bg-[#F1F2F4] flex items-center justify-between xl:mt-0">
+                    <div class="py-[10px] px-4 flex items-center">
+                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.75 5C12.75 7.07107 11.0711 8.75 9.00002 8.75C6.92896 8.75 5.25002 7.07107 5.25002 5C5.25002 2.92893 6.92896 1.25 9.00002 1.25C11.0711 1.25 12.75 2.92893 12.75 5Z"
+                                stroke="#A0AEC0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M1.50116 19.1182C1.57146 15.0369 4.9019 11.75 9.00002 11.75C13.0983 11.75 16.4287 15.0371 16.4989 19.1185C14.2161 20.166 11.6764 20.75 9.00034 20.75C6.32402 20.75 3.78412 20.1659 1.50116 19.1182Z"
+                                stroke="#A0AEC0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <input type="text" class="max-w-12 bg-transparent font-medium text-[#323B49] pl-2 pr-1 xl:max-w-16 xl:text-center" value="100">
+                    </div>
+                    <div class="bg-white py-3 px-4">
+                        <span class="text-[#323B49] font-medium text-base">To</span>
+                    </div>
+                    <div class="py-[10px] px-4 flex items-center">
+                        <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.9999 15.7191C17.2474 15.7396 17.4978 15.75 17.7506 15.75C18.7989 15.75 19.8054 15.5708 20.741 15.2413C20.7473 15.1617 20.7506 15.0812 20.7506 15C20.7506 13.3431 19.4074 12 17.7506 12C17.123 12 16.5403 12.1927 16.0587 12.5222M16.9999 15.7191C17 15.7294 17 15.7397 17 15.75C17 15.975 16.9876 16.1971 16.9635 16.4156C15.2067 17.4237 13.1707 18 11 18C8.82933 18 6.79327 17.4237 5.03651 16.4156C5.01238 16.1971 5 15.975 5 15.75C5 15.7397 5.00003 15.7295 5.00008 15.7192M16.9999 15.7191C16.994 14.5426 16.6494 13.4461 16.0587 12.5222M16.0587 12.5222C14.9928 10.8552 13.1255 9.75 11 9.75C8.87479 9.75 7.00765 10.8549 5.94169 12.5216M5.94169 12.5216C5.46023 12.1925 4.87796 12 4.25073 12C2.59388 12 1.25073 13.3431 1.25073 15C1.25073 15.0812 1.25396 15.1617 1.26029 15.2413C2.19593 15.5708 3.2024 15.75 4.25073 15.75C4.50307 15.75 4.75299 15.7396 5.00008 15.7192M5.94169 12.5216C5.35071 13.4457 5.00598 14.5424 5.00008 15.7192M14 3.75C14 5.40685 12.6569 6.75 11 6.75C9.34315 6.75 8 5.40685 8 3.75C8 2.09315 9.34315 0.75 11 0.75C12.6569 0.75 14 2.09315 14 3.75ZM20 6.75C20 7.99264 18.9926 9 17.75 9C16.5074 9 15.5 7.99264 15.5 6.75C15.5 5.50736 16.5074 4.5 17.75 4.5C18.9926 4.5 20 5.50736 20 6.75ZM6.5 6.75C6.5 7.99264 5.49264 9 4.25 9C3.00736 9 2 7.99264 2 6.75C2 5.50736 3.00736 4.5 4.25 4.5C5.49264 4.5 6.5 5.50736 6.5 6.75Z"
+                                stroke="#A0AEC0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <input type="text" class="max-w-12 bg-transparent font-medium text-[#323B49] pl-2 pr-1 xl:max-w-16 xl:text-center" value="1000">
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full mt-6 max-h-[200px] overflow-y-auto grid gap-y-4 xl:grid-cols-2 xl:gap-x-4 xl:gap-y-0 xl:max-h-[280px]" id="layerModal">
+                <!-- exclude word -->
+                <div class="w-full">
+                    <h6 class="subtitle">Exclude words</h6>
+
+                    <ul class="border border-[#E9EAEC] mt-2 rounded-md p-[14px] flex flex-col gap-y-[10px]">
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center xl:col-span-4">
+                                <input id="one-layer" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                <label for="one-layer"
+                                    class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                        <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="one-layer"
+                                    class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                    Vehicle
+                                </label>
+                            </div>
+                            <span class="block subtitle">65</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center xl:col-span-4">
+                                <input id="one-layer" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                <label for="one-layer"
+                                    class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                        <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="one-layer"
+                                    class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                    Vehicle
+                                </label>
+                            </div>
+                            <span class="block subtitle">65</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center xl:col-span-4">
+                                <input id="one-layer" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                <label for="one-layer"
+                                    class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                        <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="one-layer"
+                                    class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                    Vehicle
+                                </label>
+                            </div>
+                            <span class="block subtitle">65</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center xl:col-span-4">
+                                <input id="one-layer" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                <label for="one-layer"
+                                    class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                        <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="one-layer"
+                                    class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                    Vehicle
+                                </label>
+                            </div>
+                            <span class="block subtitle">65</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center xl:col-span-4">
+                                <input id="one-layer" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                <label for="one-layer"
+                                    class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                        <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="one-layer"
+                                    class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                    Vehicle
+                                </label>
+                            </div>
+                            <span class="block subtitle">65</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center xl:col-span-4">
+                                <input id="one-layer" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                <label for="one-layer"
+                                    class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                        <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="one-layer"
+                                    class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                    Vehicle
+                                </label>
+                            </div>
+                            <span class="block subtitle">65</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- exclude word -->
+                <!-- exclude topic -->
+                <div class="w-full">
+                    <h6 class="subtitle">Exclude topics</h6>
+
+                    <ul class="border border-[#E9EAEC] mt-2 rounded-md p-[14px] flex flex-col gap-y-[10px]">
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center xl:col-span-4">
+                                <input id="one-layer" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                <label for="one-layer"
+                                    class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                        <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="one-layer"
+                                    class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                    Vehicle
+                                </label>
+                            </div>
+                            <span class="block subtitle">65</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center xl:col-span-4">
+                                <input id="one-layer" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                <label for="one-layer"
+                                    class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                        <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="one-layer"
+                                    class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                    Vehicle
+                                </label>
+                            </div>
+                            <span class="block subtitle">65</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center xl:col-span-4">
+                                <input id="one-layer" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                <label for="one-layer"
+                                    class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                        <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="one-layer"
+                                    class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                    Vehicle
+                                </label>
+                            </div>
+                            <span class="block subtitle">65</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center xl:col-span-4">
+                                <input id="one-layer" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                <label for="one-layer"
+                                    class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                        <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="one-layer"
+                                    class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                    Vehicle
+                                </label>
+                            </div>
+                            <span class="block subtitle">65</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center xl:col-span-4">
+                                <input id="one-layer" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                <label for="one-layer"
+                                    class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                        <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="one-layer"
+                                    class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                    Vehicle
+                                </label>
+                            </div>
+                            <span class="block subtitle">65</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center xl:col-span-4">
+                                <input id="one-layer" type="checkbox" class="sr-only bg-transparent opacity-0" />
+                                <label for="one-layer"
+                                    class="w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] cursor-pointer relative ">
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]">
+                                        <svg class="size-4 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="one-layer"
+                                    class="ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal">
+                                    Vehicle
+                                </label>
+                            </div>
+                            <span class="block subtitle">65</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- exclude topic -->
+            </div>
+            <!-- apply filter -->
+            <div class="w-full mt-6 grid items-center grid-cols-2 gap-x-2 xl:flex xl:justify-end">
+                <button type="button"
+                    class="w-full h-[42px] flex justify-center items-center bg-[#E9EAEC] text-[#323B49] font-semibold text-base rounded-md font-jakarta anim hover:bg-[#F04438] hover:text-white xl:max-w-[142px]">Remove Filter</button>
+                <button type="submit"
+                    class="w-full h-[42px] flex justify-center items-center bg-first text-white font-semibold text-base rounded-md  font-jakarta anim hover:bg-four xl:max-w-[142px]">Apply Filter</button>
+            </div>
+            <!-- apply filter -->
+        </div>
+    </div>
+    <!-- funnel filter modal end -->
 
 </body>
 

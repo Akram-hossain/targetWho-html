@@ -31,6 +31,9 @@ h6 {
     @apply transition duration-500 ease-in-out;
 }
 
+.subtitle{
+    @apply text-base font-medium text-[#323B49]
+}
 
 input {
     @apply focus-visible:shadow-none outline-none
