@@ -71,3 +71,24 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background: #025f55;
 }
+
+/* common class */
+
+.response-item{
+    @apply flex gap-x-2 px-[14px] py-[18px] justify-between items-start xl:grid xl:grid-cols-12
+}
+
+.response-checkbox{
+    @apply w-4 h-4 flex items-center justify-center rounded border border-[#E9EAEC] bg-white cursor-pointer relative
+}
+
+.res-checkbox-item{
+    @apply absolute inset-0 flex items-center justify-center text-third bg-white rounded-[4px]
+}
+
+.res-title{
+    @apply ms-2 text-sm font-medium text-[#323B49] cursor-pointer lg:text-base xl:text-sm xl:font-normal
+}
+.res-audience{
+    @apply flex items-center gap-x-2 mt-[6px] ml-6 xl:ml-0 xl:col-span-7 xl:grid xl:grid-cols-7
+}
