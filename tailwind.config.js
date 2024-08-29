@@ -35,6 +35,7 @@ module.exports = {
         'first': '#009688', 
         'second': '#E0F2F1', 
         'third': '#F8F8F8', 
+        'danger': '#F04438', 
       },
       borderColor: {
         'first' : '#E9EAEC', 
